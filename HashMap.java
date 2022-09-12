@@ -1,4 +1,4 @@
-class HashMap {
+class MyHashMap { hugo
 
     private class Entry {
         private int value;
@@ -37,8 +37,8 @@ class HashMap {
         var bucket = getBucket(key);
         if(bucket != null)
             for(var entry : bucket)
-            if(entry.key == key)
-                return entry;
+                if(entry.key == key)
+            return entry;
         return null;
     }
     
